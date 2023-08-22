@@ -15,6 +15,12 @@
   ],
 
   "background": {
-    "scripts": ["hardsub-interceptor.js"]
-  }
+    "scripts": ["src/hardsub-interceptor.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.crunchyroll.com/watch/*"],
+      "js": ["src/refresher.js"]
+    }
+  ]
 }
