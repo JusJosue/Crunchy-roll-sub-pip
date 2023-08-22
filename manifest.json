@@ -26,5 +26,13 @@
 
   "icons": {
     "48": "icons/icon-48.png"
+  },
+
+  "action": {
+    "default_icon": {
+      "32": "icons/icon-32.png"
+    },
+    "default_title": "spicyroll",
+    "default_popup": "popup/index.html"
   }
 }
