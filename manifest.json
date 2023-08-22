@@ -15,6 +15,6 @@
   ],
 
   "background": {
-    "scripts": ["background.js"]
+    "scripts": ["hardsub-interceptor.js"]
   }
 }
