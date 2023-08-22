@@ -1,7 +1,7 @@
 {
-  "description": "idk if this will work",
+  "description": "force crunchyroll to use hardsub video",
   "manifest_version": 3,
-  "name": "cr-thing",
+  "name": "spicyroll",
   "version": "0.1",
 
   "permissions": [
@@ -22,5 +22,9 @@
       "matches": ["https://www.crunchyroll.com/watch/*"],
       "js": ["src/refresher.js"]
     }
-  ]
+  ],
+
+  "icons": {
+    "48": "icons/icon-48.png"
+  }
 }
