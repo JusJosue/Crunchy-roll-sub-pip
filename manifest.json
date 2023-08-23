@@ -7,7 +7,8 @@
   "permissions": [
     "webRequest",
     "webRequestBlocking",
-    "webRequestFilterResponse"
+    "webRequestFilterResponse",
+    "storage"
   ],
   "host_permissions": [
     "https://www.crunchyroll.com/watch/*",
@@ -15,12 +16,18 @@
   ],
 
   "background": {
-    "scripts": ["src/hardsub-interceptor.js"]
+    "scripts": ["src/functionality/hardsub-interceptor.js"]
   },
   "content_scripts": [
     {
       "matches": ["https://www.crunchyroll.com/watch/*"],
-      "js": ["src/refresher.js"]
+      "js": ["src/functionality/refresher.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "matches": ["<all_urls>"],
+      "resources": ["src/util/*"]
     }
   ],
 
@@ -33,6 +40,6 @@
       "32": "icons/icon-32.png"
     },
     "default_title": "spicyroll",
-    "default_popup": "popup/index.html"
+    "default_popup": "src/popup/index.html"
   }
 }
