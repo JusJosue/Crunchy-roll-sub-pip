@@ -41,5 +41,11 @@
     },
     "default_title": "spicyroll",
     "default_popup": "src/popup/index.html"
+  },
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "spicyroll@aekai.dev"
+    }
   }
 }
